@@ -1,6 +1,6 @@
 {
     "name": "tongwoojun/flarum-ext-auth-iqiyi",
-    "description": "Allow users to log in with GitHub, Twitter, Facebook, Google, and more!",
+    "description": "Allow users to log in with iqiyi!",
     "authors": [
         {
             "name": "tongwoojun",
@@ -20,16 +20,8 @@
         "flarum/core": "^1.0.0",
         "fof/extend": "^1.0.0",
         "fof/components": "^1.0.0",
-        "tongwoojun/oauth2-iqiyi": "^1.8.2"
-    },
-    "replace": {
-        "flarum/auth-facebook": "*",
-        "flarum/auth-github": "*",
-        "flarum/auth-twitter": "*",
-        "fof/auth-discord": "*",
-        "fof/auth-gitlab": "*",
-        "luuhai48/oauth-google": "*",
-        "luuhai48/oauth-linkedin": "*"
+        "league/oauth2-client": "^2.0",
+        "tongwoojun/oauth2-iqiyi": "1.0.x-dev"
     },
     "autoload": {
         "psr-4": {
@@ -45,9 +37,13 @@
                 "backgroundColor": "#e74c3c",
                 "color": "#fff"
             }
-        },
-        "flagrow": {
-            "discuss": "https://discuss.flarum.org/d/25182"
+        }
+    },
+    "repositories": {
+        "packagist.org": false,
+        "private-packagist": {
+            "type": "composer",
+            "url": "https://repo.packagist.com/tongwoojun/"
         }
     }
 }
