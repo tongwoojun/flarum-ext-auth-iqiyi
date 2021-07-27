@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Tongwooju\OAuth;
+namespace Tongwoojun\OAuth;
 
 /**
  * We use an object that can be cast to string, because it allows us to use the Flarum Route extender

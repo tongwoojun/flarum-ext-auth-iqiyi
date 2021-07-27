@@ -30,7 +30,7 @@
     },
     "extra": {
         "flarum-extension": {
-            "title": "FoF OAuth",
+            "title": "IQIYI OAuth",
             "category": "feature",
             "icon": {
                 "name": "fas fa-sign-in-alt",
