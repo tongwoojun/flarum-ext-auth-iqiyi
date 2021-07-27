@@ -1,0 +1,42 @@
+fof-oauth:
+  admin:
+    settings:
+      only_icons_label: Only show the Log In Button icons (alternative layout)
+
+      providers:
+        callback_url_text: If necessary, set the callback URL to {url}.
+
+        iqiyi:
+          description: Create an app at {link}. You will need to set a Terms of Service URL and a Privacy Policy URL. Make sure to then add the request email permission.
+          api_key_label: API Key
+          api_secret_label: API Secret
+
+  forum:
+    log_in:
+      with_button: Log In with {provider}
+
+      # Modify these if your provider requires specific wording.
+      # You may use {provider} in the translation.
+      with_iqiyi_button: '=> fof-oauth.forum.log_in.with_button'
+
+    # Modify these if you need to change how the provider name
+    # appears in the log in button.
+    providers:
+      iqiyi: '=> fof-oauth.lib.providers.iqiyi'
+
+    error:
+      bad_verification_code: Invalid or expired verification token. Please try again.
+      invalid_state: Invalid state. Please try again.
+
+  lib:
+    providers:
+      iqiyi: iqiyi
+
+  ref:
+    settings:
+      app_id: App ID
+      app_secret: App Secret
+
+      client_id: Client ID
+      client_secret: Client Secret
+
